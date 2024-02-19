@@ -1,5 +1,5 @@
 <template>
     <div>
-        Home丁真
+        productlist哈哈
     </div>
 </template>

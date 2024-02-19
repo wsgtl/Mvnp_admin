@@ -1,5 +1,5 @@
 <template>
     <div>
-        Home丁真
+        newsList
     </div>
 </template>
