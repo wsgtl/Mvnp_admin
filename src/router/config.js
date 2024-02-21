@@ -6,6 +6,7 @@ import NewsAdd from "../views/news-manage/NewsAdd"
 import NewsList from "../views/news-manage/NewsList"
 import ProductAdd from "../views/product-manage/ProductAdd"
 import ProductList from "../views/product-manage/ProductList"
+import Notfound from "../views/notfound/Notfound"
 const routers = [
     {
         path: "/center",
@@ -38,6 +39,15 @@ const routers = [
     {
         path: "/product-manage/newslist",
         component: ProductList
+    },
+    {
+        path: "/",
+        redirect: "/index"
+    },
+    {
+        path: "/:pathMatch(.*)",//错误路径重定向404
+        name:"Notfound",
+        component: Notfound
     },
 ]
 export default routers;
